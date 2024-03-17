@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social link profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: hsl(0, 0%, 8%);
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+
+        
+        .master{
+            background-color: hsl(0, 0%, 12%);
+            width: 28%;
+            height: 100%;
+            border-radius: 10px;
+            margin:100px 0px 0px 35%;
+
+
+        }
+        .image{
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+        }
+        .image>h2{
+            color: white;
+            font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+        }
+        .image>p{
+            color: hsl(75, 94%, 57%);
+            font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+        }
+        .image>.white_p{
+            color: white;
+            font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+        }
+    
+        .buttons{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            padding: 10%;
+    
+        }
+        button{
+            width:300px;
+            height: 50px;
+            background-color: hsl(0, 0%, 20%);
+            color: white;
+            border-radius: 10px;
+            font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+    cursor: pointer;
+        }
+        a :hover{
+            background-color: hsl(75, 94%, 57%); ;
+            color: black;
+        }
+        @media screen and (max-width:1025px){
+            .master{
+                width:50%;
+                margin-top: 50px;
+            }
+        }
+        @media screen and (max-width:321px){
+            .master{
+                width:100%;
+                margin: 0px;
+            }
+        }
+        @media screen and (max-width:426px){
+            .master{
+                width:100%;
+                margin: 0px;
+            }
+        }
+        @media screen and (max-width:769px){
+            .master{
+                
+            }
+        }
+        @media screen and (max-width:376px){
+            .master{
+                width:100%;
+                margin: 0px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="master">
+        <div class="image">
+            <img src="avatar-jessica.jpeg">
+            <h2>Jessica Randall</h2>
+            <p>London , United Kingdom</p>
+            <p class="white_p">"Front-end developer and avid reader"</p>
+            <div class="buttons">
+                <a href="#"><button>GitHub</button></a>
+                <a href="#"><button>Frontend Mentor</button></a>
+                <a href="#"><button>LinkedIn</button></a>
+                <a href="#"><button>Twitter</button></a>
+                <a href="#"><button>Instagram</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
