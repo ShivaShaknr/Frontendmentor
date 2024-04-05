@@ -1,142 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social link profile</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Portal</title>
     <style>
-        body{
-            background-color: hsl(0, 0%, 8%);
-        }
-        img{
-            width: 100px;
-            height: 100px;
-            border-radius: 100px;
-        }
-
-        
-        .master{
-            background-color: hsl(0, 0%, 12%);
-            width: 28%;
-            height: 100%;
-            border-radius: 10px;
-            margin:100px 0px 0px 35%;
-
-
-        }
-        .image{
-            align-items: center;
-            text-align: center;
-            padding: 25px;
-        }
-        .image>h2{
-            color: white;
-            font-family: "Inter", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-            font-variation-settings:
-            "slnt" 0;
-        }
-        .image>p{
-            color: hsl(75, 94%, 57%);
-            font-family: "Inter", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600;
-            font-style: normal;
-            font-variation-settings:
-            "slnt" 0;
-        }
-        .image>.white_p{
-            color: white;
-            font-family: "Inter", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-            font-variation-settings:
-            "slnt" 0;
-        }
-    
-        .buttons{
+        .main {
             display: flex;
-            gap: 15px;
-            flex-direction: column;
-            align-items: center;
-            padding: 10%;
-    
+            justify-content: space-around;
+            padding: 100px;
         }
-        button{
-            width:300px;
-            height: 50px;
-            background-color: hsl(0, 0%, 20%);
-            color: white;
-            border-radius: 10px;
-            font-family: "Inter", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600;
-            font-style: normal;
-            font-variation-settings:
-                "slnt" 0;
-            cursor: pointer;
-        }
-        a :hover{
-            background-color: hsl(75, 94%, 57%); ;
-            color: black;
-        }
-        @media screen and (max-width:1025px){
-            .master{
-                width:50%;
-                margin-top: 50px;
-            }
-        }
-        @media screen and (max-width:321px){
-            .master{
-                width:100%;
-                margin: 0px;
-            }
-        }
-        @media screen and (max-width:426px){
-            .master{
-                width:100%;
-                margin: 0px;
-            }
-        }
-        @media screen and (max-width:769px){
-            .master{
-                
-            }
-        }
-        @media screen and (max-width:376px){
-            .master{
-                width:100%;
-                margin: 0px;
 
-            }
+        .main1,
+        .main2 {
+            width: 650px;
+            height: 650px;
+            border: 3px solid grey;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px gray;
+        }
+        .question{
+            padding: 70px;
+        }
+        .testcase{
+            padding-left: 70px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            background-color: cornflowerblue;
+            font-weight:  bold;
+            color: black;
+            border-radius: 5px;
+        }
+        .answer{
+            padding: 100px;
+        }
+        input{
+            height: 30px;
+            border-radius: 5px;
+        }
+        textarea{
+            border-radius: 5px;
+             
         }
     </style>
 </head>
+
 <body>
+    <div class="buttons">
+        
+    </div>
     <div class="main">
-        <div class="master">
-        <div class="image">
-            <img src="avatar-jessica.jpeg" alt="image">
-            <h2>Jessica Randall</h2>
-            <p>London , United Kingdom</p>
-            <p class="white_p">"Front-end developer and avid reader"</p>
-            <div class="buttons">
-                <a href="https://github.com/ShivaShaknr"><button>GitHub</button></a>
-                <a href="https://www.frontendmentor.io/profile/ShivaShaknr"><button>Frontend Mentor</button></a>
-                <a href="https://www.linkedin.com/in/shivashankar13/"><button>LinkedIn</button></a>
-                <a href="https://shiva-folio.vercel.app/"><button>Twitter</button></a>
-                <a href="https://www.instagram.com/shivajan15/"><button>Instagram</button></a>
+        <div class="main1">
+            <div class="question">
+                <h4>
+                    <h3>Developing "Lucky Number" program.<br/></h3>
+
+                    A four digit number A,B,C,D is called Lucky Number if A+B = C+D.
+                    Write a Java Programm that asks the user to enter a four numbers and tell if the number is a lucky number or not
+                </h4>
+            </div>
+            <div class="testcase">
+               
+               
+                    <h4>Test Cases</h4>
+                    <h5>
+                    Input<br/>
+                    Enter A : 3<br/>
+                    Enter B : 7<br/>
+                    Enter C : 1<br/>
+                    Enter D : 9<br/>
+                    Output<br/>
+                    The given numbers are Lucky number
+                    </h5>
+                    <h5>
+                        Input<br/>
+                        Enter A : 3<br/>
+                        Enter B : 5<br/>
+                        Enter C : 2<br/>
+                        Enter D : 1<br/>
+                        Output<br/>
+                        The given numbers are Not Lucky number
+                    </h5>
+                    
+                
             </div>
         </div>
+        <div class="main2">
+            <div class="answer">
+                <textarea rows="20" cols="60" >
+import java.util.*;
+class Main {
+public static void main(String[] args) {
+        System.out.println("Hello Coders");
+    }
+}
+                </textarea>
+                <p>*Note that if You have compiler please solve there and click send code button or Simply use this notepad and after completing copy the code and click send code button<br/></p>
+                <a href=" https://formsubmit.co/el/vocixo"><button>Send code</button></a>
+            </div>
         </div>
     </div>
-    
 </body>
+
+
 </html>
